@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+body {
+    color: #3f2860;
+    background-color: #3f2860;
+    font-family: sans-serif;
+}
+
+main {
+    padding: 0 3em 3em 3em;
+    display: block;
+    margin-left: 170px;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-image: url("assets/lilyheader.jpg");
+    background-position: right;
+    background-color: #9bc1c2;
+    height: 150px;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+
+nav {
+    text-align: center;
+    float: left;
+    width: 190px;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav :link {
+    color: #3f2860;
+}
+
+nav :visited {
+    color: #497777;
+}
+
+nav :hover {
+    color: #a26100;
+    border: 3px inset #333333;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+    border: 3px outset #cccccc;
+    text-decoration: none;
+}
+
+li {
+    font-size: 90%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 1px solid #3f2860;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 1px solid #3f2860;
+}
+
+tr:nth-of-type(even){
+    background: #D7E8E9;
+}
+
+caption{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+footer {
+    background-color: #9bc1c2;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+    padding: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+.floatleft {
+    margin-right: 4em;
+    float: left
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    color: #3f2860;
+    background-color: #F5F5F5;
+    min-width: 550px;
+    max-width: 1280px;
+}
+
+#mathero {
+    height: 300px;
+    background-image: url("assets/yogamat.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#loungehero {
+    height: 300px;
+    background-image: url("assets/yogalounge.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 10em;
+    padding-right: 1em;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 2em;
+}
+
+input[type=submit]{
+    margin-left: 12em;
+}
+
+form{
+    padding: 3em;
+}
+
+@media only screen and (max-width: 64em) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding: 1px;
+    }
+
+    main {
+        padding: 0 1em 2.5em;
+        margin: 0;
+        font-size: 90%;
+        float: none;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+    }
+
+    nav a {
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;
+    }
+
+    h2, h3, p, dl {
+        padding: 0 2em;
+    }
+
+    main ul {
+        margin: 2em;
+    }
+
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    .clear {
+        padding-left: 2em;
+    }
+
+    #mathero, #loungehero {
+        height: 150px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.5em;
+        width: 45%;
+        float: left;
+        min-width: 6em;
+        margin-left: 0.5em;
+    }
+
+    li {
+        font-size: 100%;
+
+    }
+
+    .floatleft {
+        float: none;
+        display: none;
+    }
+
+    #mathero, #loungehero {
+        background-image: none;
+        height: 0;
+    }
+
+    footer {
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    label{
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"]{
+        margin-left:0;
+    }
+}
