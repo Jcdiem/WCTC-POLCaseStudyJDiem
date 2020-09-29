@@ -65,6 +65,11 @@ nav a {
     text-align: center;
     border: 3px outset #cccccc;
     text-decoration: none;
+    transition: background-color 3s ease-out;
+}
+
+nav a:hover {
+    background-color: #b6d2d3;
 }
 
 li {
@@ -85,11 +90,11 @@ td, th {
     border: 1px solid #3f2860;
 }
 
-tr:nth-of-type(even){
+tr:nth-of-type(even) {
     background: #D7E8E9;
 }
 
-caption{
+caption {
     margin: 1em;
     font-weight: bold;
     font-size: 120%;
@@ -151,16 +156,16 @@ label {
     padding-right: 1em;
 }
 
-input, textarea{
+input, textarea {
     display: block;
     margin-bottom: 2em;
 }
 
-input[type=submit]{
+input[type=submit] {
     margin-left: 12em;
 }
 
-form{
+form {
     padding: 3em;
 }
 
@@ -271,12 +276,12 @@ form{
         display: none;
     }
 
-    label{
+    label {
         float: none;
         text-align: left;
     }
 
-    input[type="submit"]{
-        margin-left:0;
+    input[type="submit"] {
+        margin-left: 0;
     }
 }
